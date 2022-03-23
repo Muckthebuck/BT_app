@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    tools:context=".Doggo"
+    android:orientation="horizontal">
+
+    <com.zerokol.views.joystickView.JoystickView
+        android:id="@+id/joystickView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="25dp"
+        tools:layout_editor_absoluteY="20dp" />
+    <LinearLayout
+        android:id="@+id/InfoLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/rightsTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/rights_lab"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#757575" />
+
+
+
+        <Button
+            android:id="@+id/buttonForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goForward" />
+
+
+        <Button
+            android:id="@+id/buttonBackward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goBackward" />
+
+        <Button
+            android:id="@+id/buttonJump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jump" />
+
+        <Button
+            android:id="@+id/buttonSit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sit" />
+        <Button
+            android:id="@+id/connectBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connect" />
+
+        <Button
+            android:id="@+id/doggoBack"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/none"
+            app:icon="@android:drawable/ic_menu_revert"
+            app:iconTint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
